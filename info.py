@@ -28,12 +28,12 @@ BOT_TOKEN = environ.get('BOT_TOKEN', "")
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
 
-PICS = (environ.get('PICS', 'https://i.imgur.com/dRC35Gb.jpeg https://i.imgur.com/65uXLGJ.jpeg https://i.imgur.com/8tt72SS.jpeg https://i.imgur.com/7nuY3QZ.jpeg https://i.imgur.com/UsdQ5Sb.jpeg https://i.imgur.com/qxaWx1c.jpeg')).split()  # Sample pic
+PICS = (environ.get('PICS', 'https://i.imgur.com/iW9tsz6.jpeg https://i.imgur.com/bDNYdQ8.jpeg')).split()  # Sample pic
 NOR_IMG = environ.get("NOR_IMG", "https://i.imgur.com/7nuY3QZ.jpeg")
 MELCOW_VID = environ.get("MELCOW_VID", "https://i.imgur.com/65uXLGJ.jpeg")
 SPELL_IMG = environ.get("SPELL_IMG", "https://i.imgur.com/7nuY3QZ.jpeg")
 SUBSCRIPTION = (environ.get('SUBSCRIPTION', 'https://i.imgur.com/7nuY3QZ.jpeg'))
-FSUB_PICS = (environ.get('FSUB_PICS', 'https://i.imgur.com/8tt72SS.jpeg https://i.imgur.com/7nuY3QZ.jpeg'))  # Fsub pic
+FSUB_PICS = (environ.get('FSUB_PICS', 'https://i.imgur.com/iW9tsz6.jpeg'))  # Fsub pic
 
 # ============================
 # Admin, Channels & Users Configuration
@@ -49,7 +49,7 @@ DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in enviro
 support_chat_id = environ.get('SUPPORT_CHAT_ID', '-1002365375059')  # Support group id (make sure bot is admin)
 reqst_channel = environ.get('REQST_CHANNEL_ID', '-1002843464203')  # Request channel id (make sure bot is admin)
 AUTH_CHANNEL = [int(fch) if id_pattern.search(fch) else fch for fch in environ.get('AUTH_CHANNEL', '-1002412834203 -1002238603343 -1002274084870').split()]
-MULTI_FSUB = [int(channel_id) for channel_id in environ.get('MULTI_FSUB', '').split() if re.match(r'^-?\d+$', channel_id)]  # Channel for force sub (make sure bot is admin)
+MULTI_FSUB = [int(channel_id) for channel_id in environ.get('MULTI_FSUB', '-1002412834203 -1002238603343 -1002274084870').split() if re.match(r'^-?\d+$', channel_id)]  # Channel for force sub (make sure bot is admin)
 
 
 # ============================
@@ -116,7 +116,7 @@ PORT = environ.get("PORT", "8080")
 MSG_ALRT = environ.get('MSG_ALRT', 'Share & Support Us ♥️')
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://Rm_Supports')  # Support group link (make sure bot is admin)
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "False")), False)
-IMDB = is_enabled((environ.get('IMDB', "False")), True)
+IMDB = is_enabled((environ.get('IMDB', "True")), True)
 AUTO_FFILTER = is_enabled((environ.get('AUTO_FFILTER', "True")), True)
 AUTO_DELETE = is_enabled((environ.get('AUTO_DELETE', "True")), True)
 DELETE_TIME = int(environ.get("DELETE_TIME", "300"))  #  deletion time in seconds (default: 5 minutes). Adjust as per your needs.
@@ -129,7 +129,7 @@ SPELL_CHECK_REPLY = is_enabled(environ.get("SPELL_CHECK_REPLY", "True"), True)
 MAX_LIST_ELM = environ.get("MAX_LIST_ELM", None)
 INDEX_REQ_CHANNEL = int(environ.get('INDEX_REQ_CHANNEL', LOG_CHANNEL))
 FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '-1002390337330')).split()]
-MELCOW_NEW_USERS = is_enabled((environ.get('MELCOW_NEW_USERS', "False")), False)
+MELCOW_NEW_USERS = is_enabled((environ.get('MELCOW_NEW_USERS', "True")), True)
 PROTECT_CONTENT = is_enabled((environ.get('PROTECT_CONTENT', "False")), True)
 PUBLIC_FILE_STORE = is_enabled((environ.get('PUBLIC_FILE_STORE', "True")), True)
 PM_SEARCH = bool(environ.get('PM_SEARCH', False))  # PM Search On (True) / Off (False)
