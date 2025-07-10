@@ -61,10 +61,10 @@ OWNER_UPI_ID = environ.get('OWNER_UPI_ID', '@RahatMx')
 # ============================
 # MongoDB Configuration
 # ============================
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://meagan43:fQO5oUgjovox6kWh@rahat1.aebuc.mongodb.net/?retryWrites=true&w=majority&appName=rahat1")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://sourovislam637:SAdiKUL6043@cluster0.ihcba.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 DATABASE_URI2 = environ.get('DATABASE_URI2', "mongodb+srv://huhypizu:Z0IRtApEy5sxsr4W@rahat2.o9bja.mongodb.net/?retryWrites=true&w=majority&appName=rahat2")
-DATABASE_NAME = environ.get('DATABASE_NAME', "Rahat")
-COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Rahat')
+DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
+COLLECTION_NAME = environ.get('COLLECTION_NAME', 'MFiles')
 
 # ============================
 # Movie Notification & Update Settings
