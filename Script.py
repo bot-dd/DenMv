@@ -1,5 +1,5 @@
 class script(object):
-    START_TXT = """</b>\n\n<b>ʜᴇʏ {}, {}</b>\n\n<b>ɪ ᴀᴍ ᴛʜᴇ ᴍᴏsᴛ ᴘᴏᴡᴇʀғᴜʟ ᴀᴜᴛᴏ ғɪʟᴛᴇʀ ʙᴏᴛ ᴡɪᴛʜ ᴘʀᴇᴍɪᴜᴍ ғᴇᴀᴛᴜʀᴇ.</b>\n <blockquote>🧬 Maintained By @RahatMx</blockquote>"""
+    START_TXT = """</b><b>ʜᴇʏ {}, {}</b>\n\n<b>ɪ ᴀᴍ ᴛʜᴇ ᴍᴏsᴛ ᴘᴏᴡᴇʀғᴜʟ ᴀᴜᴛᴏ ғɪʟᴛᴇʀ ʙᴏᴛ ᴡɪᴛʜ ᴘʀᴇᴍɪᴜᴍ ғᴇᴀᴛᴜʀᴇ.</b>\n <blockquote>🧬 Maintained By @RahatMx</blockquote>"""
 
     GSTART_TXT = """<b>ʜᴇʏ {},\n\n𝒊 𝑨𝒎 𝑻𝒉𝒆 𝑴𝒐𝒔𝒕 𝑷𝒐𝒘𝒆𝒓𝒇𝒖𝒍 𝑨𝒖𝒕𝒐 𝑭𝒊𝒍𝒕𝒆𝒓 𝑩𝒐𝒕 𝑾𝒊𝒕𝒉 𝑷𝒓𝒆𝒎𝒊𝒖𝒎 𝑭𝒆𝒂𝒕𝒖𝒓𝒆.\n\n<blockquote>Nᴇᴇᴅ Pʀᴇᴍɪᴜᴍ 👉🏻 /plan</blockquote></b>"""
     
@@ -271,7 +271,11 @@ Nᴀᴍᴇ : {}
 
 Mᴇꜱꜱᴀɢᴇ : <b>{}</b>"""
     
-    CAPTION = """<b><a href="https://t.me/Rm_Movie_Flix">{file_name}</a></b>\n\n<b>♨️ Backup Channel : <a https://t.me/RM_Movi>[RM Movie Flix (Backup)]</a></b>"""
+    CAPTION = """<b>@RM_Movie_Flix {file_name}\n\n━━━━━━━━━━━━━━━━━━⍟
+⿸ 𝑴𝒂𝒊𝒏 𝑪𝒉𝒂𝒏𝒏𝒆𝒍 : @RM_Movie_Flix
+⿸ 𝑩𝒂𝒄𝒌𝒖𝒑 𝑪𝒉𝒂𝒏𝒏𝒆𝒍 : @RM_Movi
+⿸ 𝑴𝒐𝒗𝒊𝒆 𝑹𝒆𝒒𝒖𝒆𝒔𝒕 𝑮𝒓𝒐𝒖𝒑 : @Movies_Rm
+━━━━━━━━━━━━━━━━━━⍟</b>"""
 
     IMDB_TEMPLATE_TXT = """
 <b>🏷 Title</b>: <a href={url}>{title}</a>
